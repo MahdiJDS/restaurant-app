@@ -9,6 +9,7 @@ This app provides a smooth user experience with advanced UI features such as **d
 
 - 📂 **JSON-based Data** – Fetch and render restaurant menu from a JSON file.  
 - 🔎 **Search Bar** – Search dishes in real-time.  
+- 🔃 **Code Splitting** and **Lazy Loading** for Performance.
 - 🖱️ **Click-to-View Details** – Click any product to see its full details page.  
 - 🛒 **Cart & Checkout** – Add products to the cart and simulate payments.  
 - 🌙 **Dark Mode Toggle** – Seamlessly switch between light and dark themes.  
@@ -22,6 +23,7 @@ This app provides a smooth user experience with advanced UI features such as **d
 ## 🛠️ Tech Stack
 
 - **React.js** – Component-based frontend library  
+- **Code Splitting** and **Lazy Loading** for Performance.
 - **Tailwind CSS** – Utility-first CSS framework for styling  
 - **JavaScript (ES6+)** – Core functionality  
 - **JSON** – Data storage and fetching  
