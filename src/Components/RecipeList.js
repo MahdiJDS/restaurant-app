@@ -17,7 +17,7 @@ export default function RecipeList({ recipes, deleteData }) {
             {recipes.map(recipe => (
                 <div key={recipe.id} className={`card ${mode}`}>
                     <h1 className='text-2xl font-bold'>{recipe.title}</h1>
-                    <img src={recipe.image} />
+                    <img src={recipe.image} alt='recipe img' loading='lazy'/>
                     <p>{recipe.cookingTime} to make</p>
 
                     <div className='flex flex-col w-full gap-5'>

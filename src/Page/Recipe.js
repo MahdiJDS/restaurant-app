@@ -18,7 +18,7 @@ export default function Recipe() {
 
   const handleAddToCart = () => {
     if (recipe) {
-      addToCart(recipe); 
+      addToCart(recipe);
     }
   };
 
@@ -31,11 +31,14 @@ export default function Recipe() {
       />
       <div className="card w-[800px]">
         {error && <p>{error}</p>}
-        {isLoading && <p>Loading...</p>}
+        {/* {isLoading && <p>Loading...</p>} */}
+        {isLoading && <div className={`h-screen flex items-center justify-center`}>
+          <div className="loader"></div>
+        </div>}
         {recipe && (
           <>
             <h2 className="text-2xl font-bold">{recipe.title}</h2>
-            <img src={recipe.image} alt={recipe.title} className="my-4" />
+            <img src={recipe.image} alt={recipe.title} className="my-4" loading='lazy' />
             <p>Takes {recipe.cookingTime} to Cook.</p>
             <ul>
               {recipe.ingredients.map(ing => (
